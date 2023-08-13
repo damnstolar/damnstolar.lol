@@ -6,20 +6,74 @@
 }
 
 body {
-    background: linear-gradient(270deg, #22faef, #ff6bf8);
-    background-size: 200% 400%;
+    overflow: hidden;
+    background-image: url(bg.png);
+    background-size: 100%;
 
-    animation: AnimationName 34s ease infinite;
 }
-p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 100px;
-    color: white;
+@font-face {
+        font-family: 'star_jediregular';
+    src: url('starjedi-webfont.woff2') format('woff2'),
+         url('starjedi-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+.logo{
+    width: 100px;
+    margin-left: 0;
+}
+.logo img{
+    width: 100%;
+}
+.ob{
+    height: 400px;
+}
+.obp{
+    margin: 0;
+    margin-right: 40px;
+    font-family: star_jediregular;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffe81f;
+    font-size: 200px;
     text-align: center;
+    line-height: 170px;
 }
-
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+.ozzy img{
+    position: absolute;
+    margin-left: 0px;
+    width: 40%;
+    transition: width 1s;
+}
+.ozzy img:hover{
+    width: 45%;
+}
+.text{
+    width: 60%;
+    margin: auto;
+    margin-right: 0;
+}
+.textp{
+    font-family: star_jediregular;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffe81f;
+    margin-right: 30px;
+    position: absolute;
+    text-align: right;
+    line-height: 100px;
+    transition: line-height 1s;
+}
+.textp:hover{
+    line-height: 150px;
+}
+.interactive{
+    position: fixed;
+    bottom: 0;
+    font-family: star_jediregular;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffe81f;
+    font-size: 20px;
+    text-align: center;
 }
