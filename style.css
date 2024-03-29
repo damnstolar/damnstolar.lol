@@ -1,98 +1,35 @@
-#tenor-gif-embed{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-body {
-    /* overflow: hidden; */
+body{
     background-image: url(bg.jpg);
-    background-size: 100%;
-
 }
-@font-face {
-        font-family: 'star_jediregular';
-    src: url('starjedi-webfont.woff2') format('woff2'),
-         url('starjedi-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-}
-.logo{
+#tv {
+    max-width: 80%;
+    margin: 0 auto;
     position: relative;
-    width: 100px;
-    margin: 30px;
-    margin-bottom: 0;
-}
-.logo img{
-    width: 100%;
-}
-.ob{
-    height: 400px;
-}
-.obp{
-    margin: 0;
-    margin-right: 40px;
-    font-family: star_jediregular;
-    font-weight: normal;
-    font-style: normal;
-    color: #ffe81f;
-    font-size: 200px;
-    text-align: center;
-    line-height: 170px;
-}
-.ozzy img{
+  }
+  #tvscreen {
+    background-image: url('TV.png');
+    background-size: cover;
     position: relative;
-    margin-left: 2px;
-    width: 40%;
-    transition: width 1s;
-}
-.ozzy img:hover{
-    width: 45%;
-}
-.text{
-    width: 60%;
-    margin-left: auto;
-    margin-right: 0;
-}
-.textp{
+    padding-top: 56.25%;
+    overflow: hidden;
+  }
+  #player {
     position: absolute;
-    font-family: star_jediregular;
-    font-weight: normal;
-    font-style: normal;
-    color: #ffe81f;
-    margin-right: 30px;
-    text-align: right;
-    line-height: 100px;
-    transition: line-height 1s;
-}
-.textp:hover{
-    line-height: 150px;
-}
-.footer{
-    position: fixed;
-    width: 600px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: star_jediregular;
-    font-weight: normal;
-    font-style: normal;
-    color: #ffe81f;
-    font-size: 20px;
+    top: 47.5%;
+    left: 50.2%;
+    transform: translate(-50%, -50%);
+    width: 65.6%;
+    height: 65.6%;
+  }
+  #text{
+    color: white;
+    font-family: Kilo;
     text-align: center;
-}
-.button{
-    width: 300px;
-    left: 0;
-    right: 0;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-}
-/* input{
-    width: 300px;
-} */
+    font-size: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  @font-face {
+    font-family: Kilo;
+    src: url(Kilo.otf) format("opentype");
+  }
